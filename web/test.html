@@ -3,12 +3,43 @@
 <head>
     <meta charset="utf-8">
     <title>Demo by Roko C.B.</title>
+    <link href="test.css" rel="stylesheet">
 </head>
 <body>
 
-<button class="login-button-arrow">CLICK ME</button>
-<button class="login-button-arrow">ME TOO</button>
-<script src="test.js"></script>
+<div class="test">
+    <div class="test_row">
+        <input class="calculator__display" id="firstNumber" type="text" disabled />
+        <input class="calculator__display" id="sign" type="text" disabled />
+        <input class="calculator__display" id="secondNumber" type="text" disabled />
+        <h2>=</h2>
+        <input class="calculator__display" id="result" type="text" />
+        <button type="button" id="generateButton" class="calculator__key calculator__button">Generate</button>
 
+    </div>
+    <div class="buttons">
+        <div class="calculator__row">
+            <button type="button" value="5" class="calculator__key calculator__button">5</button>
+            <button type="button" value="6" class="calculator__key calculator__button">6</button>
+            <button type="button" value="7" class="calculator__key calculator__button">7</button>
+            <button type="button" value="<-" class="calculator__key calculator__backspace"><-</button>
+        </div>
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+            <button type="button" value="2" class="calculator__key calculator__button">2</button>
+            <button type="button" value="3" class="calculator__key calculator__button">3</button>
+            <button type="button" value="4" class="calculator__key calculator__button">4</button>
+            <button type="button" value="c" class="calculator__key calculator__button">c</button>
+        </div>
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+            <button type="button" id="button" value="0" class="calculator__key calculator__button" onclick="buttonClick(0)">0</button>
+            <button type="button" value="1" class="calculator__key calculator__button">1</button>
+            <button type="button" value="=" class="calculator__key calculator__key--equal">=</button>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/test.js"></script>
 </body>
 </html>
